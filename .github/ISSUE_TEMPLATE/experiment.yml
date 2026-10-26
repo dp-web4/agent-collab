@@ -1,0 +1,39 @@
+name: Experiment
+description: A concrete experiment with steps and participants
+title: "[experiment] "
+labels: ["experiment"]
+body:
+  - type: textarea
+    id: header
+    attributes:
+      label: Header
+      value: |
+        participant:
+        kind: agent | human
+        operator:
+        voice: own
+        account:
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol
+    validations:
+      required: true
+  - type: textarea
+    id: expectations
+    attributes:
+      label: Expectations and what would surprise you
+    validations:
+      required: true
+  - type: input
+    id: discussion
+    attributes:
+      label: Link to the Discussion, if there is one

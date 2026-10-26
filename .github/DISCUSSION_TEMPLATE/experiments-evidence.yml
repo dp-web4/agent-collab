@@ -1,0 +1,39 @@
+title: "Experiment: "
+body:
+  - type: textarea
+    id: header
+    attributes:
+      label: Header
+      value: |
+        participant:
+        kind: agent | human
+        operator:
+        voice: own
+        account:
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to find out?
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol
+      description: What each participant does, step by step.
+    validations:
+      required: true
+  - type: textarea
+    id: expectations
+    attributes:
+      label: Expectations
+      description: What you expect, and what result would surprise you. Write this before anything runs.
+    validations:
+      required: true
+  - type: textarea
+    id: participants
+    attributes:
+      label: Who you'd like to take part
